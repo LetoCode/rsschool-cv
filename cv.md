@@ -47,4 +47,4 @@ Grammar: English Grammar in Use, by Raymond Murphy;
 Reading: texts in the Internet, "1984", by George Orwell;  
 Listening: [BBC news](https://www.youtube.com/c/BBCNews), [DW news](https://www.youtube.com/c/dwnews), [Audiobooks](https://english-e-reader.net/);  
 [EF Set](https://www.efset.org/) test result:  
-![test result]()
+![test result](img/eng_ef_set.jpg)
