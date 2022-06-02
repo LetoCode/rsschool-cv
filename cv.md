@@ -6,10 +6,10 @@ RS School student
 
 ## Contacts
 
-Location: Minsk, Belarus;
-Phone: +375-44-766-71-47;
-E-mail: pavlov.egor@gmail.com;
-Discord: Egor(@LetoCode);
+Location: Minsk, Belarus;  
+Phone: +375-44-766-71-47;  
+E-mail: pavlov.egor@gmail.com;  
+Discord: Egor(@LetoCode);  
 GitHub: [LetoCode](https://github.com/LetoCode)
 
 ## About myself
@@ -24,11 +24,11 @@ Programming is very interesting to me. I learnt how to program in 1c language. A
 
 ## Education and Courses
 
-**Belorussian State Technical Universiry**, Bachelor of Economy;
-**Business Analyst**, IT Academy;
-**Basic Jira and Confluence**, Institute IBA
-[**SOLO on keyboard**, Russian course](https://solo.nabiraem.ru/study/rus)
-[**SOLO on keyboard**, English course](https://solo.nabiraem.ru/study/eng)
+**Belorussian State Technical Universiry**, Bachelor of Economy;  
+**Business Analyst**, IT Academy;  
+**Basic Jira and Confluence**, Institute IBA  
+[**SOLO on keyboard**, Russian course](https://solo.nabiraem.ru/study/rus)  
+[**SOLO on keyboard**, English course](https://solo.nabiraem.ru/study/eng)  
 [**Free website development course /(Front End/). Lessons HTML CSS JS**, Freelancer for life](https://www.youtube.com/playlist?list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr)
 
 ## Code example
@@ -42,9 +42,9 @@ return a * b;
 
 ## Languages
 
-English: stydying by myself.
-Grammar: English Grammar in Use, by Raymond Murphy
-Reading: texts in the Internet, "1984", by George Orwell
-Listening: [BBC news](https://www.youtube.com/c/BBCNews), [DW news](https://www.youtube.com/c/dwnews), [Audiobooks](https://english-e-reader.net/);
-[EF Set](https://www.efset.org/) test result:
+English: stydying by myself;  
+Grammar: English Grammar in Use, by Raymond Murphy;  
+Reading: texts in the Internet, "1984", by George Orwell;  
+Listening: [BBC news](https://www.youtube.com/c/BBCNews), [DW news](https://www.youtube.com/c/dwnews), [Audiobooks](https://english-e-reader.net/);  
+[EF Set](https://www.efset.org/) test result:  
 ![test result]()
