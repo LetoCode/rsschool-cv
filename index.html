@@ -1,13 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>CV#2</title>
-  </head>
-  <body>
-    CV#2. HTML, CSS & Git Basics
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <title>CV#3</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="main__menu">
+      <ul class="menu__list">
+        <li class="list__item"><a class="item__link">Contacts</a></li>
+        <li class="list__item"><a class="item__link">About myself</a></li>
+        <li class="list__item"><a class="item__link">Education</a></li>
+        <li class="list__item"><a class="item__link">Code example</a></li>
+        <li class="list__item"><a class="item__link">Languages</a></li>
+      </ul>
+    </nav>
+    <div class="page">
+      <header class="header">
+        <div class="header__person">
+          <div class="header__item item__photo"><img src="./img/my_photo.jpg" alt="my_photo"></div>
+          <div class="header__item item__name">
+            <h1 class="">Egor Pavlov</h1>
+            <p> Business Analyst |<br> <a href="https://github.com/rolling-scopes-school">RS school</a> student
+            </p>
+          </div>
+        </div>
+        <div class="header__item item__contacts">
+          <h3>Contacts</h3>
+          <p>Location: Minsk, Belarus;<br>
+            Phone: +375-44-766-71-47;<br>
+            E-mail: pavlov.egor@gmail.com;<br>
+        </div>
+        <div class="header__item item__links">
+          <h3>Links</h3>
+          <p>
+            Discord: Egor(@LetoCode);<br>
+            GitHub: <a href="https://github.com/LetoCode">LetoCode</a></p>
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__items">
+          <div class="main__item">
+            <h3>About myself</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi veritatis nostrum necessitatibus doloremque perspiciatis? Ex est reprehenderit eos fugit alias sapiente labore quo voluptates facere magni. Error recusandae eum ipsa!</p>
+          </div>
+          <div class="main__item">
+            <h3>Education and Courses</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta iusto at praesentium molestiae dolorum minima sunt mollitia dolor nemo magnam. Laudantium itaque modi sapiente commodi, pariatur voluptatibus quidem architecto delectus quis, aspernatur, earum ab libero atque asperiores similique magni dolorem ex expedita unde! Facere voluptate nam sit recusandae iusto nostrum quaerat officia dicta, quia minus pariatur animi ullam corporis perspiciatis quidem deserunt quod. Necessitatibus assumenda quo exercitationem ipsa quis! Vero odit dolore hic eius ipsum at tempore, magnam neque earum numquam fugit laborum ducimus facilis, quam, nam ut doloribus! Architecto labore alias blanditiis repudiandae ipsam qui asperiores, accusantium nisi nulla.</p>
+          </div>
+          <div class="main__item">
+            <h3>Work experience</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ipsam unde officia quod possimus voluptatem pariatur deleniti adipisci a. Magni voluptates, eligendi odio voluptatum aspernatur perferendis dicta odit nulla aliquam tenetur facilis illum iure sint consequuntur eaque, doloremque officia fuga non rerum cumque, accusamus temporibus quibusdam cum eum? Sit similique nisi omnis voluptatibus, dolorum soluta quam aut eum tempora. Eum corrupti est vel optio animi aspernatur dolorum libero odio modi quisquam hic ad culpa repudiandae et nihil labore doloribus, corporis consequuntur tempora fugiat vitae. Incidunt odio sed neque, doloremque numquam unde illum voluptas quibusdam, dolor nisi, nam similique accusamus in?</p>
+          </div>
+          <div class="main__item">
+            <h3>Code example</h3>
+            <pre>
+# требуется создать спираль из цифр
+# начало - в центре
+# максимально 72 строки кода
+
+from math import ceil
+
+
+m_size = 10
+i = 2 
+z = m_size**2
+x, y = int(m_size/2-1), int(m_size/2-1)
+d = {1: [x, y]}
+inter_iter = 1
+
+def step_to(p, way, inter_iter):
+  global i, y, x, z
+  while p <= inter_iter and i <= z :
+    if way == 'right':
+      y = y + 1
+    elif way == 'down':
+      x = x + 1
+    elif way == 'left':
+      y = y - 1
+    elif way == 'up':
+      x = x - 1
+
+    d[i] = [x, y]
+    i +=1; p +=1
+
+while i <= z:
+  p1 = p2 = p3 = p4 = 1
+
+  step_to(p1, 'right', inter_iter)
+  step_to(p1, 'down', inter_iter)
+  inter_iter +=1
+
+  step_to(p1, 'left', inter_iter)
+  step_to(p1, 'up', inter_iter)
+  inter_iter +=1
+
+matrix = []
+
+matrix = [['_' for m in range(m_size)] for m1 in range(m_size)]
+
+for key, value in d.items():
+  matrix[value[0]][value[1]] = key
+
+with open('matrix.txt', 'w') as f:
+  for i in matrix:
+    for j in i:
+      f.write(('{: >' + str(len(str(z))+1) + '}').format(j)) 
+    f.write('\n')
+            </pre>
+          </div>
+          <div class="main__item">
+            <h3>Languages</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, commodi.</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      something
+    </footer>
+  </div>
+
+</body>
+
 </html>
