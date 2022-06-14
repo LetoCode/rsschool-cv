@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,regular,700,900&display=swap");
 
-/*Обнуление*/
+/*====================Общее=======================*/
 * {
   padding: 0;
   margin: 0;
@@ -18,8 +18,7 @@
 
 nav,
 footer,
-header,
-aside {
+header {
   display: block;
 }
 
@@ -30,7 +29,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
-  font-family: "Lato";
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f3f4f5;
 }
 
@@ -48,40 +47,28 @@ ul li {
   list-style: none;
 }
 
-img {
-  vertical-align: top;
-}
-
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-size: inherit;
   font-weight: inherit;
+  font-family: "Oswald";
 }
-
-/*==================================*/
 
 .wrapper {
   margin: 0 auto;
   max-width: 1440px;
   overflow: hidden;
-  /*background-color: #61dee7;*/
 }
 
 h1 {
-  font-family: "Oswald";
   font-weight: 500;
   font-size: 67px;
   letter-spacing: 2px;
-  line-height: 2;
   color: #ecd8cc;
+  padding: 40px 0 30px 0;
 }
 
-h3 {
-  font-family: "Oswald";
+h2 {
   font-weight: 400;
   font-size: 24px;
   letter-spacing: 1.2px;
@@ -101,9 +88,6 @@ h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.list__item {
 }
 
 .item__link {
@@ -147,12 +131,12 @@ h3 {
   background-color: #2c323d;
 }
 
-.header h3 {
+.header h2 {
   color: #ecd8cc;
   position: relative;
 }
 
-.header h3::before {
+.header h2::before {
   content: "";
   width: 40px;
   height: 2px;
@@ -167,6 +151,12 @@ h3 {
 }
 
 .header__item {
+  font-size: 20px;
+  line-height: 1.4;
+  color: rgba(236, 216, 204, 0.5);
+}
+
+.header__item li {
   font-size: 20px;
   line-height: 1.4;
   color: rgba(236, 216, 204, 0.5);
@@ -188,9 +178,6 @@ h3 {
 .item__name p {
   text-transform: uppercase;
   color: rgba(236, 216, 204, 0.5);
-}
-
-.item__contacts {
 }
 
 .item__links {
@@ -219,6 +206,15 @@ h3 {
 .main__item p {
   padding: 0 20px;
   font-size: 18px;
+  padding-bottom: 15px;
+}
+
+.main__item li {
+  padding: 0 20px;
+  list-style: circle;
+  list-style-position: inside;
+  font-size: 18px;
+  line-height: 2;
 }
 
 .main__item pre {
@@ -226,8 +222,42 @@ h3 {
   font-size: 16px;
 }
 
-.main__item h3 {
+.main__item h2 {
   background-color: #fffff6;
   line-height: 1.8;
   text-indent: 15px;
+}
+
+/*===========================footer====================*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  padding: 0 40px;
+  /* background-color: #2c323d; */
+}
+
+.footer__github-link {
+  height: 60px;
+}
+
+.footer__github-link img {
+  height: 100%;
+}
+
+.footer__year {
+  font-size: 20px;
+  color: #2c323d;
+}
+
+.footer__rsschool {
+  height: 60px;
+}
+
+.footer__rsschool img {
+  /* width: 100%;  */
+  height: 100%;
 }
