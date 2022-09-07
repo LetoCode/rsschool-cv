@@ -130,7 +130,7 @@ for key, value in d.items():
 with open('matrix.txt', 'w') as f:
   for i in matrix:
     for j in i:
-      f.write(('{: >' + str(len(str(z))+1) + '}').format(j)) 
+      f.write(('{: &gt' + str(len(str(z))+1) + '}').format(j)) 
     f.write('\n')
               </code>
             </pre>
